@@ -1,0 +1,49 @@
+<template>
+  <style>
+    *, *:before, *:after{
+      box-sizing: inherit;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .card {
+      position: relative;
+      width: 100%;
+      transform-style: preserve-3d;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .front, .back {
+      top: 0;
+      left: 0;
+      color: #29293d;
+      width: 100%;
+      display: block;
+      position: absolute;
+      border-radius: 2px;
+      background-color: #fff;
+      text-align: center;
+      border-bottom: 5px solid tomato;
+    }
+
+    .back {
+      transform: rotateX(-180deg);
+    }
+  </style>
+  <div class="card">
+    <a href="#" class="front" target="_blank">
+      <h1>Name</h1>
+      <p>Description</p>
+    </a>
+    <a href="#" class="back" target="_blank">
+      <h1>Name</h1>
+      <p>Description</p>
+    </a>
+  </div>
+</template>
+<script src="suggestion-item.js"></script>
